@@ -1,4 +1,8 @@
 from django.conf.urls import url
-from . import views.soccer_list
+from . import views
 
-url(r'^$',views.soccer_list, name='soccer_list')
+
+urlpatterns =[
+
+url(r'^$',views.soccer_list, name='soccer_list'),
+ ]

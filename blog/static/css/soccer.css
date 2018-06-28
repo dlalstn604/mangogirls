@@ -104,3 +104,15 @@ body {
     position: relative;
     z-index: 20;
 }
+<<<<<<< HEAD
+=======
+
+.text {
+    color: #FFFFFF;
+    }
+
+.comment {
+    color: #FFFFFF;
+    margin: 20px 0px 20px 20px;
+}
+>>>>>>> master

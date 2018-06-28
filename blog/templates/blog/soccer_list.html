@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-
-{% load staticfiles %}
-=======
 {% load staticfiles %}
 
->>>>>>> issue2
+
 <!doctype html>
 <html lang="ko">
 <head>
@@ -13,59 +9,48 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HELLO ! MANGO GIRLS</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>MANGO GIRLS</title>
+    <link rel="stylesheet" href="{% static 'css/soccer.css' %}">
 </head>
+
 <body>
-<<<<<<< HEAD
+
     <div>
-        <h1><a href="">2415241 Girls Blog</a></h1>
+        <h1><a href="">2018 RUSIA WORLD CUP</a></h1>
     </div>
 
+        <div class="wrapper">
+            <ul class="sq clearfix">
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/BRAZIL.png">
+                        <span class="sq-item-anchor-title">BRAZIL</span>
+                    </a>
+                </li>
 
-<html>
-    <head>
-        <title>Mango Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/soccer.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% for post in posts %}
-                        <div class="Soccer">
-                            <div class="date">
-                                <p>published: {{ soccer.published_date }}</p>
-                            </div>
-                            <h1><a href="">{{ soccer.title }}</a></h1>
-                            <p>{{ soccer.text|linebreaksbr }}</p>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/FRANCE.png">
+                        <span class="sq-item-anchor-title">FRANCE</span>
+                    </a>
+                </li>
+
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/BELGIUM.png">
+                        <span class="sq-item-anchor-title">BELGIUM</span>
+                    </a>
+                </li>
+
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/PORTUGAL.png">
+                        <span class="sq-item-anchor-title">PORTUGAL</span>
+                    </a>
+                </li>
+
+            </ul>
         </div>
+
     </body>
-=======
-        <div>
-            <h1><a href="">Django Girls Blog</a></h1>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
-
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
-</body>
->>>>>>> issue2
 </html>

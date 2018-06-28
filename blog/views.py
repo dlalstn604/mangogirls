@@ -12,11 +12,6 @@ from .models import Soccer, Comment
 
 
 
-
-def post_list(request):
-    posts = Soccer.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/soccer_list.html', {})
-
 def soccer_list(request):
     posts = Soccer.objects.all()
     return render(request, 'blog/soccer_list.html', {'posts': posts})

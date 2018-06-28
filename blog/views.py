@@ -19,7 +19,7 @@ def soccer_list(request):
 
 def soccer_detail(request, pk):
     post = get_object_or_404(Soccer, pk=pk)
-    return render(request, 'blog/soccer_detail.html', {'post': post})
+    return render(request, 'blog/soccer_detail.html', {'soccer': post})
 
 @login_required
 def soccer_new(request):

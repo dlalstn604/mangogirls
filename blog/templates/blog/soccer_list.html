@@ -1,29 +1,56 @@
-
 {% load staticfiles %}
+
+
 <!doctype html>
 <html lang="ko">
 <head>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HELLO ! MANGO GIRLS</title>
+    <title>MANGO GIRLS</title>
+    <link rel="stylesheet" href="{% static 'css/soccer.css' %}">
 </head>
+
 <body>
-    <div>
-        <h1><a href="">2415241 Girls Blog</a></h1>
-    </div>
 
     <div>
-        <p>published: 14.06.2014, 12:14</p>
-        <h2><a href="">My first post</a></h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h1><a href="">2018 RUSIA WORLD CUP</a></h1>
     </div>
 
-    <div>
-        <p>published: 14.06.2014, 12:14</p>
-        <h2><a href="">My second post</a></h2>
-        <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-    </div>
-</body>
+        <div class="wrapper">
+            <ul class="sq clearfix">
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/BRAZIL.png">
+                        <span class="sq-item-anchor-title">BRAZIL</span>
+                    </a>
+                </li>
+
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/FRANCE.png">
+                        <span class="sq-item-anchor-title">FRANCE</span>
+                    </a>
+                </li>
+
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/BELGIUM.png">
+                        <span class="sq-item-anchor-title">BELGIUM</span>
+                    </a>
+                </li>
+
+                <li class="sq-item">
+                    <a class="sq-item-anchor" href="">
+                        <img class="sq-item-anchor-cover" src="images/PORTUGAL.png">
+                        <span class="sq-item-anchor-title">PORTUGAL</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </body>
 </html>

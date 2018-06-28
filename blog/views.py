@@ -1,9 +1,15 @@
+
+from django.shortcuts import render
+from django.utils import timezone
+from .models import Soccer
+
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 
 from blog.forms import SoccerForm, CommentForm
 from .models import Soccer, Comment
+
 
 
 def soccer_list(request):
@@ -68,3 +74,4 @@ def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.delete()
     return redirect('blog:soccer_detail', pk=comment.post.pk)
+

@@ -16,33 +16,31 @@
         <div class="row"></div>
             <div class="col-md-8"></div>
     </div>
-{% for soccer in posts %}
-
         <div class="wrapper">
             <ul class="sq clearfix">
                 <li class="sq-item">
-                    <a class="sq-item-anchor" href="">
+                    <a class="sq-item-anchor" href="{% url 'blog:soccer_detail' pk=1 %}">
                         <img class="sq-item-anchor-cover" src="images/BRAZIL.png">
-                        <span class="sq-item-anchor-title"></span><a href="{% url 'blog:soccer_detail' pk=soccer.pk %}">{{ soccer.title }}</a>
+                        <span class="sq-item-anchor-title">BRAZIL</span>
                     </a>
                 </li>
 
                 <li class="sq-item">
-                    <a class="sq-item-anchor" href="">
+                    <a class="sq-item-anchor" href="{% url 'blog:soccer_detail' pk=3 %}">
                         <img class="sq-item-anchor-cover" src="images/FRANCE.png">
                         <span class="sq-item-anchor-title">FRANCE</span>
                     </a>
                 </li>
 
                 <li class="sq-item">
-                    <a class="sq-item-anchor" href="">
+                    <a class="sq-item-anchor" href="{% url 'blog:soccer_detail' pk=2 %}">
                         <img class="sq-item-anchor-cover" src="images/BELGIUM.png">
                         <span class="sq-item-anchor-title">BELGIUM</span>
                     </a>
                 </li>
 
                 <li class="sq-item">
-                    <a class="sq-item-anchor" href="">
+                    <a class="sq-item-anchor" href="{% url 'blog:soccer_detail' pk=4 %}">
                         <img class="sq-item-anchor-cover" src="images/PORTUGAL.png">
                         <span class="sq-item-anchor-title">PORTUGAL</span>
                     </a>
@@ -50,6 +48,5 @@
 
             </ul>
         </div>
-{% endfor %}
 </body>
 </html>

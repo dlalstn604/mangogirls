@@ -16,7 +16,7 @@ class Comment(models.Model):
     soccer = models.ForeignKey('blog.Soccer', related_name='comments')
     author = models.CharField(max_length=200)
     text = models.TextField()
-    created_date = models.DataTimeField(default=timezone.now)
+    created_date = models.DateTimeField(default=timezone.now)
     approved_comment = models.BooleanField(default=False)
 
     def approve(self):

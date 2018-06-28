@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post">
+        {% if soccer.created_date %}
+            <div class="date">
+                {{ soccer.created_date }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'blog:soccer_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1>{{ soccer.title }}</h1>
+        <p>{{ soccer.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}

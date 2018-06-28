@@ -45,7 +45,7 @@ def soccer_edit(request, pk):
     return render(request, 'blog/soccer_edit.html', {'form': form})
 
 @login_required
-def Soccer_remove(request, pk):
+def soccer_remove(request, pk):
     post = get_object_or_404(Soccer, pk=pk)
     post.delete()
     return redirect('blog:soccer_list')

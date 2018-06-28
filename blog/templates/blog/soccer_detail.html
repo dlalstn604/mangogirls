@@ -1,0 +1,13 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="soccer">
+        {% if soccer.created_date %}
+            <div class="date">
+                {{ soccer.created_date }}
+            </div>
+        {% endif %}
+            <h1><a href="">{{ soccer.title }}</a></h1>
+                <p>{{ soccer.text|linebreaksbr }}</p>
+    </div>
+{% endblock %}

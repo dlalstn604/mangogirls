@@ -18,13 +18,14 @@
     <div>
         <h1><a href="">2018 RUSIA WORLD CUP</a></h1>
     </div>
+{% for soccer in posts %}
 
         <div class="wrapper">
             <ul class="sq clearfix">
                 <li class="sq-item">
                     <a class="sq-item-anchor" href="">
                         <img class="sq-item-anchor-cover" src="images/BRAZIL.png">
-                        <span class="sq-item-anchor-title">BRAZIL</span>
+                        <span class="sq-item-anchor-title"></span><a href="{% url 'blog:soccer_detail' pk=soccer.pk %}">{{ soccer.title }}</a>
                     </a>
                 </li>
 
@@ -51,6 +52,6 @@
 
             </ul>
         </div>
-
+{% endfor %}
     </body>
 </html>

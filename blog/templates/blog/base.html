@@ -1,0 +1,24 @@
+{% load staticfiles %}
+
+
+<!doctype html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MANGO GIRLS</title>
+    <link rel="stylesheet" href="{% static 'css/soccer.css' %}">
+</head>
+
+<body>
+
+    <div>
+        <h1><a href="">2018 RUSIA WORLD CUP</a></h1>
+    </div>
+        {% block content %}
+        {% endblock %}
+</body>
+</html>

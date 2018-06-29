@@ -9,20 +9,6 @@
     <title>MANGO GIRLS</title>
 </head>
 <body>
-
-<<<<<<< HEAD
-<div>
-    <h1><a href="">2018 RUSIA WORLD CUP</a></h1>
-</div>
-{% for soccer in posts %}
-<div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-<a href="{% url 'blog:soccer_detail' pk=soccer.pk %}">BRAZIL</a>
-{% endfor %}
-=======
     <div class="page-header">
         <h1><a href="/">2018 RUSSIA WORLD CUP</a></h1>
         <div class="content container"></div>
@@ -61,6 +47,5 @@
 
             </ul>
         </div>
->>>>>>> master
 </body>
 </html>

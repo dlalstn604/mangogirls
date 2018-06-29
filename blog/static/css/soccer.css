@@ -17,6 +17,7 @@ body, ul {
 }
 
 li {
+
     list-style-type: none;
 }
 
@@ -104,4 +105,18 @@ body {
 .sq-item-anchor-title {
     position: relative;
     z-index: 20;
+}
+
+
+.text {
+    color: #FFFFFF;
+    }
+
+.comment {
+    color: #FFFFFF;
+    margin: 20px 0px 20px 20px;
+}
+
+.po {
+color: #ffffff;
 }

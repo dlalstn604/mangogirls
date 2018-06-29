@@ -1,3 +1,4 @@
+
 .page-header {
     background-color: #B22222;
     margin-top: 70;
@@ -35,8 +36,8 @@ body {
 }
 
 .wrapper {
-    width: 1000px;
-    margin: 200px auto;
+    width: 800px;
+    margin: 100px auto;
 }
 
 .sq {
@@ -61,13 +62,13 @@ body {
     bottom: 0;
     margin: 1rem;
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 5rem;
     overflow: hidden;
     opacity: 0.5;
     font-family: 'Roboto Slab', serif;
     transition: all .3s;
     border-radius: 10px;
-    border: 0 solid white;
+    border: 0 solid mintcream;
 }
 
 .sq-item-anchor::after {
@@ -89,7 +90,7 @@ body {
     z-index: 30;
     border-width: 10px;
     opacity: 1;
-    font-size: 3rem;
+    font-size: 6rem;
     box-shadow: 0 0 30px 50px rgba(0,0,0,0.5);
 }
 
@@ -104,15 +105,3 @@ body {
     position: relative;
     z-index: 20;
 }
-<<<<<<< HEAD
-=======
-
-.text {
-    color: #FFFFFF;
-    }
-
-.comment {
-    color: #FFFFFF;
-    margin: 20px 0px 20px 20px;
-}
->>>>>>> master

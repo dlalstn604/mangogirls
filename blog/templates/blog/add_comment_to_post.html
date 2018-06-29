@@ -1,11 +1,10 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="po">
     <form method="POST" class="post-form">{% csrf_token %}
         <h1 class="comment">New comment</h1>
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">댓글투척</button>
+        <div class="po">닉네임 :</div>{{ form.author }}
+        <div class="po">한마디 :</div>{{ form.text }}<br>
+        <button type="submit" class="save btn btn-default">저장</button>
     </form>
-    </div>
 {% endblock %}

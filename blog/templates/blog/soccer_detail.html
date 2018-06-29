@@ -20,7 +20,7 @@
     </div>
 <hr>
 <div class="comment">
-        <a class="btn btn-default" href="{% url 'blog:add_comment_to_post' pk=soccer.pk %}">댓글 작성</a><br><br>
+        <a class="btn btn-default" href="{% url 'blog:add_comment_to_post' pk=soccer.pk %}">응원 한마디!</a><br><br>
 </div>
 {% for comment in soccer.comments.all %}
 

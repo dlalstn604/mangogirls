@@ -6,7 +6,6 @@ from .models import Soccer
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
-
 from blog.forms import SoccerForm, CommentForm
 from .models import Soccer, Comment
 
@@ -62,7 +61,7 @@ def add_comment_to_post(request, pk):
         form = CommentForm(request.POST)
         if form.is_valid():
             comment = form.save(commit=False)
-            comment.post = post
+            comment.soccer = post
             comment.save()
             return redirect('blog:soccer_detail', pk=post.pk)
     else:
@@ -73,5 +72,5 @@ def add_comment_to_post(request, pk):
 def comment_remove(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.delete()
-    return redirect('blog:soccer_detail', pk=comment.post.pk)
+    return redirect('blog:soccer_detail', pk=comment.soccer.pk)
 

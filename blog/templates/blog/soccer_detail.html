@@ -6,12 +6,14 @@
             <div class="date">
                 {{ soccer.created_date }}
             </div>
-        {% endif %}
-            <h1><a href="">{{ soccer.title }}</a></h1>
-        <div class="text">
+        <a class="btn btn-default" href="{% url 'blog:soccer_edit' pk=soccer.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h1><a href="" >{{ soccer.title }}</a></h1>
         <p>{{ soccer.text|linebreaksbr }}</p>
-        </div>
+        {% else %}
+        <a class="btn btn-default" href="{% url 'blog:soccer_new' pk=soccer.pk %}" >수정</a>
+        {% endif %}
     </div>
+
 <hr>
 <div class="comment">
         <a class="btn btn-default" href="{% url 'blog:add_comment_to_post' pk=soccer.pk %}">댓글 작성</a><br><br>
@@ -23,6 +25,7 @@
         <div class="date">{{ comment.created_date }}</div>
         <strong>{{ comment.author }}</strong>
         <p>{{ comment.text|linebreaks }}</p>
+<a class="btn btn-default" href="{% url 'blog:comment_remove' pk=comment.pk %}">삭제</a>
     </div>
 {% empty %}
     <p>No comments here yet :(</p>
